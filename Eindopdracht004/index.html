@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./movies.js"></script>
+    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <title>Movie Finder</title>
+  </head>
+  <body>
+    <header><h1>MOVIE FINDER</h1></header>
+    <p id="movie-counter"></p>
+    <nav>
+      <div class="button-filter underline" id="div-all">
+        <input type="radio" name="filter" id="all" value="all" checked="true" />
+        <label class="all" for="all">All Movies</label>
+      </div>
+      <div class="button-filter" id="div-nieuwste">
+        <input type="radio" name="filter" id="newest-film" value="nieuwste" />
+        <label for="newest-film">Latest Movies</label>
+      </div>
+      <div class="button-filter" id="div-avengers">
+        <input type="radio" name="filter" id="avengers" value="avengers" />
+        <label for="avengers">Avengers Movies</label>
+      </div>
+      <div class="button-filter" id="div-xmen">
+        <input type="radio" name="filter" id="xmen" value="xmen" />
+        <label for="xmen">X-Men Movies</label>
+      </div>
+      <div class="button-filter" id="div-princess">
+        <input type="radio" name="filter" id="princess" value="princess" />
+        <label for="princess">Princess Movies</label>
+      </div>
+      <div class="button-filter" id="div-batman">
+        <input type="radio" name="filter" id="batman" value="batman" />
+        <label for="batman">Batman Movies</label>
+      </div>
+      <input id="search" type="text" placeholder="Search movie" value="" />
+    </nav>
+    <main>
+      <ul id="moviePosters"></ul>
+    </main>
+  </body>
+</html>

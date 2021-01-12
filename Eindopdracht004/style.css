@@ -1,0 +1,102 @@
+* {
+  text-align: center;
+  color: whitesmoke;
+  max-width: 100%;
+  outline: none;
+}
+
+body {
+  background-image: linear-gradient(to left, black, grey);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+header {
+  font-size: 2.5rem;
+  font-family: "Bangers", cursive;
+  letter-spacing: 4px;
+  padding-top: 5px;
+}
+
+h1 {
+  margin: 10px;
+}
+
+nav {
+  margin: 25px;
+  text-align: left;
+}
+
+nav .button-filter {
+  display: inline;
+  margin-right: 15px;
+}
+
+nav input[type="radio"] {
+  display: none;
+}
+
+.underline {
+  border-bottom: 2px solid red;
+  width: 131px;
+  padding: 3px;
+}
+nav input[type="text"] {
+  float: right;
+  text-align: left;
+  color: black;
+}
+
+nav label {
+  cursor: pointer;
+}
+
+main {
+  margin: 20px;
+}
+#moviePosters {
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+li {
+  padding: 10px;
+}
+
+p {
+  height: 37px;
+}
+
+img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  min-width: 100%;
+}
+
+img:hover {
+  box-shadow: 0 6px 10px 0 rgba(255, 255, 255, 0.5),
+    0 8px 22px 0 rgba(255, 255, 255, 0.15);
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 768px) {
+  #moviePosters {
+    grid-template-columns: auto auto auto;
+  }
+  nav .button-filter {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #moviePosters {
+    margin: 5px;
+    display: inline-block;
+  }
+  nav input[type="text"] {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
